@@ -14,3 +14,27 @@ The Odin Project's curriculum covers a wide range of topics, including:
 The Odin Project's curriculum is designed to help people learn coding on their own, regardless of their current experience level. Some say that the curriculum requires hard work and perseverance, but that it's worth it. 
 The Odin Project also offers job assistance after graduation and has a Discord community of learners. 
 
+## Foundations Course (https://www.theodinproject.com/paths/foundations/courses/foundations)
+
+- [HTML Foundations](foundations/)
+    - [HTML boilerplate](foundations/html-boilerplate/)
+    - [Odin Links and Images](foundations/odin-links-and-images/)
+    - [Odin Recipes](foundations/odin-recipes/)
+<br/>
+
+- [CSS Foundations]
+
+
+<br/>
+
+- [Flexbox]
+
+
+<br/>
+
+- [Javascript Basics]
+
+
+<br/>
+
+... choose next path
