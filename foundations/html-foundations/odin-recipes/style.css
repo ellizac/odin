@@ -1,24 +1,47 @@
-body {
+html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
     background-color:beige;
 }
+
 
 
 h1 {
     background-color: bisque;
     text-align: center;
     font-size: 48px;
+    padding: 20px;
+    margin: 0 auto;
 }
 
-
-ul {
-    list-style: none;
-}
-
-li {
-    display: inline-flex;
+#nav {
+    left: 0px;
     background-color: blanchedalmond;
-    border: 20px solid transparent;
-    border-radius: 10%;
+    height: 40px;
+    width: 100%;
+    margin: 0 auto;
+    /* text-align: center; */
+}
+
+
+#nav ul{
+    list-style: none;
+    margin: 0 auto;
+    padding: 10px auto;
+    text-align: center;
+}
+
+#nav ul li {
+    margin: inherit;
+    padding: inherit;
+    display: inline-block;
+}
+
+#nav ul li a {
     text-decoration: none;
+    color: black;
+    padding: 10px 20px;
+    display: inline-block;
 }
 
