@@ -5,6 +5,10 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+
+  /* change direction of body to stack items from top to bottom */
+  display: flex;
+  flex-direction: column;
 }
 
 img {
@@ -16,6 +20,9 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+
+  /* padding for buttons */
+  padding: 8px 16px;
 }
 
 input {
@@ -23,4 +30,53 @@ input {
   border-radius: 16px;
   padding: 8px 24px;
   width: 400px;
+}
+
+
+
+ul {
+  /* remove list bullets */
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+
+  /* space between the links */
+  gap: 16px;
+}
+a {
+  /* remove underline and change font color */
+  text-decoration: none;
+  color:#666;
+  
+}
+
+
+.header,
+.footer {
+  /* links are pushed to either side */
+  display: flex;
+  justify-content: space-between;
+
+  /* padding for header and footer */
+  padding: 10px;
+}
+
+.content {
+  /* logo, input, and buttons are centered in the screen */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  
+  /* takes up all the remaining space pushing footer to bottom of page */
+  flex: 1;
+  
+  /* space between logo, input and buttons */
+  gap: 16px;
+}
+
+
+.footer {
+  /* background for footer */
+  background-color: #eeeeee;
 }

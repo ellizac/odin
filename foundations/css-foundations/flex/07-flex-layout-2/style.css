@@ -1,29 +1,93 @@
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    margin: 0;
-    min-height: 100vh;
-  }
-  
-  .header {
-    height: 72px;
-    background: darkmagenta;
-    color: white;
-  }
-  
-  .footer {
-    height: 72px;
-    background: #eee;
-    color: darkmagenta;
-  }
-  
-  .sidebar {
-    width: 300px;
-    background: royalblue;
-    box-sizing: border-box;
-  }
-  
-  .card {
-    border: 1px solid #eee;
-    box-shadow: 2px 4px 16px rgba(0,0,0,.06);
-    border-radius: 4px;
-  }
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 0;
+  min-height: 100vh;
+
+  /* use flex to stack items and place footer on bottom */
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  height: 72px;
+  background: darkmagenta;
+  color: white;
+
+  /* vertically centered, 16px from edge (L/R) */
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+
+  /* text size and weight */
+  font-size: 32px;
+  font-weight: 900;
+}
+
+.footer {
+  height: 72px;
+  background: #eee;
+  color: darkmagenta;
+
+  /* text is centered horizontally and vertically */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidebar {
+  width: 300px;
+  background: royalblue;
+  box-sizing: border-box;
+
+  /* has padding and doesn't shrink */
+  flex-shrink: 0;
+  /* sidebar padding size */
+  padding: 16px;
+}
+
+/* sidebar links */
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+li {
+  /* adding space between links to match sidebar padding */
+  margin-bottom: 16px;
+}
+a {
+  /* link text seze, color, and no underline */
+  font-size: 24px;
+  text-decoration: none;
+  color: white
+}
+
+
+.card {
+  border: 1px solid #eee;
+  box-shadow: 2px 4px 16px rgba(0,0,0,.06);
+  border-radius: 4px;
+
+  /* added padding for content and border */
+  padding: 16px;
+  /* added appropriate size per card */
+  width: 300px;
+}
+
+.card-container{
+  /* padding around cards */
+  padding: 48px;
+
+  /* cards are arranged horizontally and wrap to multiple lines */
+  display: flex;
+  flex-wrap: wrap;
+
+  /* added gap to distinguish each card */
+  gap: 32px;
+}
+
+.main-content{
+  /* sidebar and cards take up the remaining space */
+  flex: 1;
+  display: flex;
+}

@@ -20,6 +20,14 @@ body {
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+
+
+  /* the icon is aligned to the left */
+  display: flex;
+  /* padding around edge of modal */
+  padding: 16px;
+  /* equal space between icon, edge of card, and text */
+  gap: 16px;
 }
 
 .icon {
@@ -33,6 +41,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  
+  /* prevents the icon from getting smashed by the tex */
+  flex-shrink: 0;
 }
 
 .close-button {
@@ -66,4 +77,22 @@ button.cancel {
   background: white;
   border: 1px solid #ddd;
   color: royalblue;
+}
+
+/* the header, text, and button are aligned with each other inside the container class*/
+
+.header {
+  /* header is bold and a slightly larger text */
+  font-weight: bold;
+  font-size: larger;
+  margin-bottom: 8px;
+  
+  /* header container should be wrapped around the x button element as well in order for flex style to work */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.text {
+  margin-bottom: 16px;
 }
