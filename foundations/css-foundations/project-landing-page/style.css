@@ -3,10 +3,17 @@ body{
     margin: 0;
     padding: 0;
 }
-header {
+
+.header-logo {
     font-size: 24px;
     color: #F9FAF8;
+}
 
+.header{
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 0 64px;
 }
 
 .hero,
@@ -39,28 +46,48 @@ a {
 }
 
 
-.secondary-text,
-.sign-up {
+.secondary-text{
     font-size: 18px;
     color: #E5E7EB;
 }
-
-
-.header-logo {
-    font-size: 24px;
-    color: #F9FAF8;
+.sign-up-button{
+    font-size: 18px;
+    color: #E5E7EB;
+    background-color: #3882F6;
+    
 }
 
-.modal,
+
+
+
+.modal{
+    background-color: #3882F6;
+}
+
+
 .modal-button {
     background-color: #3882F6;
+    padding: 8px 16px;
 }
 
 .quote {
     background-color: #E5E7EB;
     font-size: 36px;
-    font-style: light italic;
+    font-style: italic;
+    font-weight: lighter;
     color: #1F2937;
+
+    padding: 64px;
+    gap: 16px;
+
+}
+
+.quote-author{
+    font-size: 18px;
+    font-weight: bold;
+    font-style: normal;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .info-box-header {
@@ -76,4 +103,13 @@ a {
 .footer {
     display: flex;
     justify-content: center;
+    align-items: center;
+    gap: 16px;
+    padding: 16px;
+
+    color: #F9FAF8;
+    padding: 32px;
+    font-size: 12px;
+    height: 72px;
+    
 }
